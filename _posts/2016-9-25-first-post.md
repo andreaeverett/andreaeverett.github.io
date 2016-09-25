@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Student Voter Registration outside the NYC Subway
+title: Student Voter Registration at the NYC Subway
 ---
 
 This week I imagined myself as a consultant to the NY Democratic Party.  With the election coming up in a mere 6 weeks (!), it’s a busy time in politics.  One of the perennial challenges for political parties and their candidates is motivating and turning out their own likely voters, those who can be expected to vote for them rather than the competition.  In every election cycle, this involves identifying and registering new voters who fit the bill.  For the Democrats, young people who haven’t voted before are a major target demographic.  If they vote, they are disproportionately likely to vote for Democrats.  Yet they are much less likely than older Americans to be registered.  
@@ -16,7 +16,7 @@ We focused on the three nearest subway stations for each school.  This led to a 
 
 This graph shows an example of the top stations for one of the ten time slots (Mondays, 12-4 pm).  
 
-![_config.yml]({{ site.baseurl }}/images/NYUnis.png)
+![_config.yml]({{ site.baseurl }}/images/Mon12-4.png)
 
 Getting the data into shape for analysis was by far the most time-consuming part of the process.  Ideally, we would also have liked to work with the MTA data on turnstile exits, but we didn’t manage this during the brief window for the project.  Doing so would have allowed for an analysis of student arrivals to campus, with which we could also have created a morning voter registration schedule.  In addition, the 12-4 pm period probably sees many students both arriving and departing from campus, and the best data to use there would have been the total volume of subway traffic (entries + exits).  In keeping with the goal of focusing on registering students, I would also like to weight the stations by the enrollment at the nearby schools.  Some of the stations that saw the highest volume of traffic were busy for reasons that don’t have much to do with the proximity of students coming and going to a university nearby (e.g., Grand Central).  That doesn’t make them bad places to set up voter registration booths with the goal of targeting young people per se, but it does reflect the reality that identifying and mobilizing new voters is one of the harder problems for political campaigns.  Parties and candidates’ campaigns have become very adept at targeting known voters through email lists and other types of contact information.  But without this kind of fine-grained data, targeting new voters is a far noisier process.  
 
