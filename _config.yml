@@ -11,7 +11,8 @@ description: Musings on Data Science & Analytics
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
 avatar: https://raw.githubusercontent.com/barryclark/jekyll-now/master/images/jekyll-logo.png
 
-theme: hmfaysal-omega-theme
+theme: minima
+#theme: hmfaysal-omega-theme
 
 #
 # Flags below are optional
