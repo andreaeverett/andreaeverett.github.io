@@ -8,6 +8,12 @@ This week I imagined myself as a consultant to the NY Democratic Party.  With th
 
 To help the NY Democrats find and register young voters in New York City, my team and I focused on college and university students.  Because of the 501(c)(3) status of not-for-profit educational institutions, on-campus voter registration efforts must generally be non-partisan.  Therefore, we focused on helping the party to locate students as they come and go from campus.  Because many students commute to campus via the subway, we recommended that the party deploy voter registration teams outside stations near major campuses throughout the city.  We began by identifying the top 15 schools by enrollment, as shown on the map below.  
 
+```html
+<figure>
+	<img src="/images/NYUnis.png" alt="image">
+	<figcaption>Locations of top universities by enrollment.</figcaption>
+</figure>
+```
 
 ![_config.yml]({{ site.baseurl }}/images/NYUnis.png)  
 
