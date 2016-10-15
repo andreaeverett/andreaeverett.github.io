@@ -5,7 +5,7 @@ categories: blog
 ---
 
 Some movie remakes turn into beloved films, while others flop.  The 1983 remake of Scarface starring Al Pacino (original: 1932) has become a classic in its own right.  The 1998 remake of Psycho (original: 1960), on the other hand, was widely panned.  
-
+<img src='{{ site.baseurl }}/images/Scarface.jpg'/>
 ![_config.yml]({{ site.baseurl }}/images/Scarface.jpg)
 ![_config.yml]({{ site.baseurl }}/images/Psycho.jpg)   
 
