@@ -6,8 +6,8 @@ categories: blog
 
 Some movie remakes turn into beloved films, while others flop.  The 1983 remake of Scarface starring Al Pacino (original: 1932) has become a classic in its own right.  The 1998 remake of Psycho (original: 1960), on the other hand, was widely panned.  
 
-<img src='{{ site.baseurl }}/images/Scarface.jpg' style="width:200px;height:400px;display:inline-block;/>
-<img src='{{ site.baseurl }}/images/Psycho.jpg' style="width:200px;height:400px;display:inline-block;/>
+<img src='{{ site.baseurl }}/images/Scarface.jpg' style="width:200px;height:400px;"/>
+<img src='{{ site.baseurl }}/images/Psycho.jpg' style="width:200px;height:400px;"/>
 
 What distinguishes such divergent outcomes?  And can we predict how well a remake will do based on characteristics of the original?  This week I set out to investigate these questions, beginning with a list of approximately 500 pairs of original films and associated remakes I scraped from the web using BeautifulSoup. I then gathered further data on these films through additional web scraping and by using the APIs of different movie databases.  
 
