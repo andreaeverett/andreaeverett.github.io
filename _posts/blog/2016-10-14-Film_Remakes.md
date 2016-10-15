@@ -8,7 +8,6 @@ Some movie remakes turn into beloved films, while others flop.  The 1983 remake 
 
 <img src='{{ site.baseurl }}/images/Scarface.jpg' align='left' height="300" width="150"/>
 <img src='{{ site.baseurl }}/images/Psycho.jpg' align='right' height="300" width="150"/>
-</br>
 
 What distinguishes such divergent outcomes?  And can we predict how well a remake will do based on characteristics of the original?  This week I set out to investigate these questions, beginning with a list of approximately 500 pairs of original films and associated remakes I scraped from the web using BeautifulSoup. I then gathered further data on these films through additional web scraping and by using the APIs of different movie databases.  
 
