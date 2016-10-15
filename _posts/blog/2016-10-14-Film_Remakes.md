@@ -6,7 +6,7 @@ categories: blog
 
 Some movie remakes turn into beloved films, while others flop.  The 1983 remake of Scarface starring Al Pacino (original: 1932) has become a classic in its own right.  The 1998 remake of Psycho (original: 1960), on the other hand, was widely panned.  
 
-![_config.yml]({{ site.baseurl }}/images/Psycho.png)
+![_config.yml]({{ site.baseurl }}/images/Psycho.png {{ site.baseurl }}/images/Scarface.png)
 ![_config.yml]({{ site.baseurl }}/images/Scarface.png)   
 
 What distinguishes such divergent outcomes?  And can we predict how well a remake will do based on characteristics of the original?  This week I set out to investigate these questions, beginning with a list of approximately 500 pairs of original films and associated remakes I scraped from the web using BeautifulSoup. I then gathered further data on these films through additional web scraping and by using the APIs of different movie databases.  
@@ -17,24 +17,24 @@ The best model I found for predicting user ratings on out-of-sample data was a l
 
 **Key Takeaways:**
 
-*Dos*
-+ Remake an original with a higher IMDB rating  
-+ Choose an older original…  
-+ But don’t wait too long to remake it  
-+ Make a longer movie  
-+ Earn award nominations & wins
-+ Remake a Drama
+*Dos*  
++ Remake an original with a higher IMDB rating    
++ Choose an older original…    
++ But don’t wait too long to remake it    
++ Make a longer movie    
++ Earn award nominations & wins  
++ Remake a Drama  
 
-*Don'ts*
-+ Remake an original with many nominations & awards  
-+ Remake an Adventure film
-+ Remake a Horror film
-+ Remake a Mystery
-+ Remake a Romance
+*Don'ts*  
++ Remake an original with many nominations & awards    
++ Remake an Adventure film  
++ Remake a Horror film  
++ Remake a Mystery  
++ Remake a Romance  
 
-*Surprisingly irrelevant?*
-+ Whether the remake and original are in the same language
-+ Whether the remake and original are from the same country
+*Surprisingly irrelevant?*  
++ Whether the remake and original are in the same language  
++ Whether the remake and original are from the same country  
 
 The most important features were the top four under 'Dos.' I thought it was likely that originals with stronger ratings would produce remakes with higher ratings as well: when controlling for other factors about these films, I thought ratings would probably reflect the quality of the story itself. However, it also seemed possible that films with higher ratings might be more difficult to live up to, or that the relationship between ratings of the original and the remake might be non-linear in some other way. I did try several non-linear specifications for this variable, but they did nothing to improve the model (or even made it worse).  
 
