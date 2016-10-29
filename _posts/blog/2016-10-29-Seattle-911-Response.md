@@ -30,9 +30,15 @@ Priority ranking of calls according to the likelihood that they are about a viol
 
 To demonstrate the utility of such a list, we selected all calls from one week, October 26 - November 1, 2015. We ranked these calls in descending order according to the predicted probabilities from our logistic regression model that they involved a violent crime. We then imagined a hypothetical scenario in which the police could only answer half of these calls (presumably unrealistic, but useful for illustration).  In practice there were 2,113 calls that week, of which 70 concerned violent crimes. If the police had answered a random sample of half of these calls, they should have been expected to catch about 35 of the true violent events.  By comparison, if they had answered the top half of the calls according to our priority ranking, they would have caught 52 of the true violent events.  This represents nearly a 50% improvement, as illustrated in the two maps below. The one on the left marks the true violent events captured by a random sample of half the data, while the one on the right marks those captured by a ranked sample of the same size. Because most violent crimes occur in a relatively limited area around the city center, the main difference is the greater concentration of red dots in this area in the righthand map.        
 
+<div style="width:600 px">
+<div style="float:left; width:300 px">
 <figure>
 <img src='{{ site.baseurl }}/images/Seattle_Random.png' style="float:left;width:250px;height:400px;"/>
-<figcaption>Random sample (35 violent events)</figcaption>
-<img src='{{ site.baseurl }}/images/Seattle_Sorted.png' style="float:left;width:250px;height:400px;"/><figcaption>Sorted sample (52 violent events)</figcaption></figure>
+<figcaption>Random sample (35 violent events)</figcaption></figure></div>
+<div style="float:left; width:300 px">
+<figure>
+<img src='{{ site.baseurl }}/images/Seattle_Sorted.png' style="float:left;width:250px;height:400px;"/><figcaption>Sorted sample (52 violent events)</figcaption></figure></div>
+<div style="clear:both"></div>
+</div>
 
 A ranking system of this nature would presumably be more useful the greater the resource constraints a police department faces.  For a department that is able to promptly answer all incoming calls and quickly send officers wherever they are needed, it might be of little benefit.  Where a department struggles to keep up with the demand for effective law enforcement, however, it could help save many lives.  What is more, our investigation offers just one small example of what might be possible.  For instance, medical emergencies represent another group of top priority calls for 911 dispatchers, and with additional data we might be able to predict which calls are most likely to require an immediate medical response.  Similarly, with more information we might be able to predict which calls are more likely to be false alarms, and rank them lower on a department's priority list.    
