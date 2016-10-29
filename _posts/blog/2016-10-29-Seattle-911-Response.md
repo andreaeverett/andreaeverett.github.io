@@ -36,8 +36,8 @@ To demonstrate the utility of such a list, we selected all calls from one week, 
 <td><img src='{{ site.baseurl }}/images/Seattle_Sorted.png' style="width:250px;height:400px;"/></td>
 </tr>
 <tr>
-<td>Random sample (35 violent events)</td>
-<td>Sorted sample (52 violent events)</td>
+<td align="left">Random sample (35 violent events)</td>
+<td align="left">Sorted sample (52 violent events)</td>
 </tr>
 </table>
 
