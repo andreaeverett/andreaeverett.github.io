@@ -6,14 +6,14 @@ categories: blog
 
 <table>
 <tr>
-<td><img src='{{ site.baseurl }}/images/Great Basin NP.png' style="width:300px;height:200px;"/></td>
-<td><img src='{{ site.baseurl }}/images/Hawaii Volcanoes NP.png' style="width:300px;height:200px;"/></td>
-<td><img src='{{ site.baseurl }}/images/Ellis Island.png' style="width:300px;height:200px;"/></td>
+<td><img src='{{ site.baseurl }}/images/Great Basin NP.png' style="width:300px;height:150px;"/></td>
+<td><img src='{{ site.baseurl }}/images/Hawaii Volcanoes NP.png' style="width:300px;height:150px;"/></td>
+<td><img src='{{ site.baseurl }}/images/Ellis Island.png' style="width:300px;height:150px;"/></td>
 </tr>
 <tr>
-<td align="left">Great Basin National Park</td>
-<td align="left">Hawaii Volcanoes National Park</td>
-<td align="left">Ellis Island National Monument</td>
+<td align="center">Great Basin National Park</td>
+<td align="center">Hawaii Volcanoes National Park</td>
+<td align="center">Ellis Island National Monument</td>
 </tr>
 </table>
 
@@ -25,7 +25,7 @@ I analyzed these data in several ways. First, I conducted a sentiment analysis o
 
 My favorite approach to the data led to a content-based recommendation system that takes input from a potential visitor and uses it to suggest the park sites s/he would be most likely to enjoy. To do this I began by merging all visitor responses from each park site into a single document.  I then used a word2vec model trained on Google word vectors (available [here](https://drive.google.com/file/d/0B7XkCwpI5KDYNlNUTTlSS21pQmM/edit)) to generate a single 300-feature word vector for each NPS site. This same model is used to generate a comparable vector based on the potential visitor's description of what s/he would like to see or experience during a visit to an NPS site.  Finally, I use cosine similarity to compare the user input vector with the vectors from the NPS sites, and return the top five sites as suggested destinations. For example, consider a user who writes: "I would like to see a rainforest.  I would also like to go for a hike on the coast or in the mountains." The model's top suggestion is Olympic National Park, WA.  The next four are Great Basin National Park, North Cascades National Park, Congaree National Park, and Big Bend National Park. To demonstrate the system I also built a simple web app that uses a text box to accept the user input and shows the name and a photo for the top suggestion, followed by a list of the next best sites. This picture shows the output for a second example:
 
-<img src='{{ site.baseurl }}/images/NPS-app.png' style="width:500px;height:400px;"/>      
+<img src='{{ site.baseurl }}/images/NPS-app.png' style="width:900px;height:600px;"/>      
 
 Finally, I performed topic modeling followed by clustering on these same merged documents. The NPS categorizes each park unit according to the types mentioned above: national parks, monuments, historic sites, etc.  I wanted to see whether clustering the NPS sites based on topics highlighted in the visitor surveys would yield a similar breakdown of unit types or whether it would point toward an alternative way of thinking about the distinctions among them.  For the topic modeling I used a hierarchical dirichlet process (HDP) since I didn't know in advance how many topics I was looking for. It yielded 150.  I then used the proportions of each topics in the different documents as features in a K-means clustering model.  While there were several reasonable possibilities for the number of clusters, I ultimately selected five.  The figure below displays these clusters in two-dimensional space after using principal component analysis (PCA) to extract the top two dimensions (which together accounted for about 48% of the variation in the clustering).  
 
