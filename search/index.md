@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "Search"
-date: 
+date:
 modified:
 excerpt:
 image:
-  feature:
+  feature: so-simple-sample-image-7.jpg
 search_omit: true
 sitemap: false
 ---
-  
+
 <!-- Search form -->
 <form method="get" action="{{ site.url }}/search/" data-search-form class="simple-search">
   <label for="q">Search {{ site.title }} for:</label>
