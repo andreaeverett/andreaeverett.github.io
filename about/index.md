@@ -9,4 +9,4 @@ image:
   creditlink: #http://wegraphics.net/downloads/free-ultimate-blurred-background-pack/
 ---
 
-Welcome! My name is Andrea Everett, and I am a data scientist and political scientist. I use this blog to present results and discussion of my recent data science projects.  Please enjoy!  
+Welcome! My name is Andrea Everett, and I am a data scientist and political scientist. I use this blog to present results and discussion of my data science projects.  Please enjoy!  
