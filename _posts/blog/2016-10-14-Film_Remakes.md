@@ -13,7 +13,7 @@ What distinguishes such divergent outcomes?  In particular, which characteristic
 
 The films I examined were made between 1902 and 2015.  For this reason, financial data was only available for about half the sample.  I chose instead to focus on the IMDB user ratings of the remade films.  I initially considered a large number of feature variables, with an emphasis on the original film.  These included the original's IMDB user rating, its release year, indicators for nineteen distinct genres it may have belonged to, and the log of the total number of film awards and nominations it received.  Additional features based on the remake included the number of years since the original came out, indicators for whether the two films were from the same country and in the same language, and the remake's runtime in minutes.  
 
-The best model I found for predicting user ratings on out-of-sample data was a linear regression containing 11 features (R-squared = .29). For comparison, a random forest model containing the same variables achieved an out-of-sample R-squared of .21.  What is more, the linear model highlights some interesting conclusions about the kinds of films that potential filmmakers should and should not choose to remake if they want to earn strong viewer ratings.
+The best model I found for predicting user ratings on out-of-sample data was a linear regression containing 11 features (R-squared = .29). For comparison, a random forest model containing the same features achieved an out-of-sample R-squared of .22.  What is more, the linear model highlights some interesting conclusions about the kinds of films that potential filmmakers should and should not choose to remake if they want to earn strong viewer ratings.
 
 **Key Takeaways:**
 
